@@ -1,0 +1,28 @@
+int vs Integer
+-----------------------------------------------------------------------------------------
+
+int
+	primitive data type
+	stores actual binary values
+
+Integer
+	wrapper class for integer values
+	stores references to Integer objects
+	has methods and additional functionality (reverse, rotate, etc.)
+	can be directly converted to other bases (binary, oct, hex)
+	can be set as null
+	inherits from Object class
+
+-----------------------------------------------------------------------------------------
+Advantages:
+
+int
+	does not require unwrapping
+	is faster due to carrying raw data
+
+Integer
+	has many built-in methods as well as inherited Object and Number class methods
+	can access static variables such as MAX_VALUE, MIN_VALUE, etc.
+	has two constructors that can take an int value or a int value in String form
+	able to cast from String to int and int to String
+	
