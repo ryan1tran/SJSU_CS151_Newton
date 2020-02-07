@@ -6,13 +6,6 @@ public final class Product
 	private final String productDesc;
 	private final int maxQuantity;
 	
-	public Product()
-	{
-		this.productName = null;
-		this.productDesc = null;
-		this.maxQuantity = -1;
-	}
-	
 	public Product(String productName, String productDesc, int maxQuantity)
 	{
 		this.productName = productName;
