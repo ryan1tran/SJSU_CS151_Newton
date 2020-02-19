@@ -1,6 +1,6 @@
 package hw3;
 
-public class FullTimeSalaryEmployee extends Employee
+public class FullTimeSalaryEmployee extends SalaryEmployee
 {	
 	public FullTimeSalaryEmployee()
 	{

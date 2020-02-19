@@ -1,6 +1,6 @@
 package hw3;
 
-public class PartTimeHourlyEmployee extends Employee
+public class PartTimeHourlyEmployee extends HourlyEmployee
 {
 	public PartTimeHourlyEmployee()
 	{
@@ -22,6 +22,7 @@ public class PartTimeHourlyEmployee extends Employee
 		super(firstName, lastName, age, socialSecurity, address, gender, weight, education, id, accommodations, status, startDate, pay, directDeposit);
 	}
 	
+	@Override
 	public float computePay(float work)
 	{
 		if (work > 40)

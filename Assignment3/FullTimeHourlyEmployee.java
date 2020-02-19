@@ -1,6 +1,6 @@
 package hw3;
 
-public class FullTimeHourlyEmployee extends Employee
+public class FullTimeHourlyEmployee extends HourlyEmployee
 {
 	float overtimePay;
 	
@@ -38,6 +38,7 @@ public class FullTimeHourlyEmployee extends Employee
 		this.overtimePay = overtimePay;
 	}
 
+	@Override
 	public float computePay(float work)
 	{
 		if (work > 40)

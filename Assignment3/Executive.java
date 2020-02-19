@@ -1,6 +1,6 @@
 package hw3;
 
-public class Executive extends Employee
+public class Executive extends SalaryEmployee
 {
 	float yearlyBonus;
 	
