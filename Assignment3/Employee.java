@@ -37,13 +37,6 @@ public class Employee extends Person
 		this.pay = pay;
 		this.directDeposit = directDeposit;
 	}
-	
-	@Override
-	public void introduce()
-	{
-		super.introduce();
-		System.out.println("My employee ID is " + getId() + " and I am a " + getStatus() + " worker.");
-	}
 
 	public String getStartDate()
 	{
@@ -73,5 +66,40 @@ public class Employee extends Person
 	public void setDirectDeposit(boolean directDeposit)
 	{
 		this.directDeposit = directDeposit;
+	}
+	
+	@Override
+	public String toString()
+	{
+		return getFirstName() + " " + getLastName() + "\n"
+				+ "Status: " + getStatus() + "\n"
+				+ "Age: " + getAge() + "\n"
+				+ "Address:\n" + address.toString() + "\n"
+				+ "Gender: " + getGender() + "\n"
+				+ "Weight: " + getWeight() + "\n"
+				+ "Education: " + getEducation() + "\n"
+				+ "ID: " + getId() + "\n"
+				+ "Needs Accommodations: " + needsAccommodations() + "\n"
+				+ "Status: " + getStatus() + "\n"
+				+ "Start Date: " + getStartDate() + "\n"
+				+ "Has Direct Deposit: " +  hasDirectDeposit() + "\n";
+	}
+	
+	@Override
+	public void introduce()
+	{
+		System.out.println(toString());
+	}
+	
+	public void introduceSS()
+	{
+		introduce();
+		System.out.println("Social Security: " + getSocialSecurity() + "\n");
+	}
+	
+	public void introduceSSpay()
+	{
+		introduceSS();
+		System.out.println("Pay: $" + getPay() + "\n");
 	}
 }

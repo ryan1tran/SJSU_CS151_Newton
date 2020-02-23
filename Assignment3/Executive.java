@@ -40,35 +40,6 @@ public class Executive extends SalaryEmployee
 		return getPay() + getYearlyBonus();
 	}
 	
-	@Override
-	public String toString()
-	{
-		return getFirstName() + " " + getLastName() + "\n"
-				+ "Status: " + getStatus() + "\n"
-				+ "Age: " + getAge() + "\n"
-				+ "Address:\n" + address.toString() + "\n"
-				+ "Gender: " + getGender() + "\n"
-				+ "Weight: " + getWeight() + "\n"
-				+ "Education: " + getEducation() + "\n"
-				+ "ID: " + getId() + "\n"
-				+ "Needs Accommodations: " + needsAccommodations() + "\n"
-				+ "Status: " + getStatus() + "\n"
-				+ "Start Date: " + getStartDate() + "\n"
-				+ "Has Direct Deposit: " +  hasDirectDeposit() + "\n";
-	}
-	
-	@Override
-	public void introduce()
-	{
-		System.out.println(toString());
-	}
-	
-	public void introduceSS()
-	{
-		introduce();
-		System.out.println("Social Security: " + getSocialSecurity() + "\n");
-	}
-	
 	public void introduceSSpay()
 	{
 		introduceSS();
