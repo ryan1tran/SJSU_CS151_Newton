@@ -54,8 +54,6 @@ public class Executive extends SalaryEmployee
 				+ "Needs Accommodations: " + needsAccommodations() + "\n"
 				+ "Status: " + getStatus() + "\n"
 				+ "Start Date: " + getStartDate() + "\n"
-				+ "Pay: " + getPay() + "\n"
-				+ "Yearly Bonus: " + getYearlyBonus() + "\n"
 				+ "Has Direct Deposit: " +  hasDirectDeposit() + "\n";
 	}
 	
@@ -69,5 +67,12 @@ public class Executive extends SalaryEmployee
 	{
 		introduce();
 		System.out.println("Social Security: " + getSocialSecurity() + "\n");
+	}
+	
+	public void introduceSSpay()
+	{
+		introduceSS();
+		System.out.println("Pay: $" + getPay() + " annually\n"
+				+ "Yearly Bonus: $" + getYearlyBonus() + "\n");
 	}
 }

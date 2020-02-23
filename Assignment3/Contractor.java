@@ -61,8 +61,6 @@ public class Contractor extends HourlyEmployee
 				+ "Needs Accommodations: " + needsAccommodations() + "\n"
 				+ "Status: " + getStatus() + "\n"
 				+ "Start Date: " + getStartDate() + "\n"
-				+ "Pay: " + getPay() + "\n"
-				+ "Overtime Pay: " + getOvertimePay() + "\n"
 				+ "Has Direct Deposit: " +  hasDirectDeposit() + "\n";
 	}
 	
@@ -76,5 +74,12 @@ public class Contractor extends HourlyEmployee
 	{
 		introduce();
 		System.out.println("Social Security: " + getSocialSecurity() + "\n");
+	}
+	
+	public void introduceSSpay()
+	{
+		introduceSS();
+		System.out.println("Pay: $" + getPay() + " per hour\n"
+				+ "Overtime Pay: $" + getOvertimePay() + " per overtime hour\n");
 	}
 }

@@ -17,41 +17,41 @@ public class BusinessTest
 		Customer cu1 = new Customer("Cu", "One", 10, 321987456, new Address(6789, "This Street", "San Jose", 95131, "CA"), "female", 100, "elementary school", 1, false, "customer", "Mastercard");
 		Customer cu2 = new Customer("Cu", "Two", 20, 321987654, new Address(9876, "A Street", "San Jose", 95192, "CA"), "male", 100, "university", 2, false, "customer", "PayPal");
 		
-		e1.introduce();
+		e1.introduceSSpay();
 		System.out.println("Pay: $" + e1.computePay() + "\n" + "-----------------------------------" + "\n");
 		
-		e2.introduce();
+		e2.introduceSSpay();
 		System.out.println("Pay: $" + e2.computePay() + "\n" + "-----------------------------------" + "\n");
 		
-		fs1.introduce();
+		fs1.introduceSSpay();
 		System.out.println("Pay: $" + fs1.computePay(50) + "\n" + "-----------------------------------" + "\n");
 		
-		fs2.introduce();
+		fs2.introduceSSpay();
 		System.out.println("Pay: $" + fs2.computePay(50) + "\n" + "-----------------------------------" + "\n");
 		
-		fh1.introduce();
+		fh1.introduceSSpay();
 		System.out.println("Pay: $" + fh1.computePay(40) + "\n" + "-----------------------------------" + "\n");
 		
-		fh2.introduce();
+		fh2.introduceSSpay();
 		System.out.println("Pay: $" + fh2.computePay(45) + "\n" + "-----------------------------------" + "\n");
 		
-		ph1.introduce();
+		ph1.introduceSSpay();
 		System.out.println("Pay: $" + ph1.computePay(40) + "\n" + "-----------------------------------" + "\n");
 		
-		ph2.introduce();
+		ph2.introduceSSpay();
 		System.out.println("Pay: $" + ph2.computePay(41) + "\n" + "-----------------------------------" + "\n");
 		
-		co1.introduce();
+		co1.introduceSSpay();
 		System.out.println("Pay: $" + co1.computePay(45) + "\n" + "-----------------------------------" + "\n");
 		
-		co2.introduce();
+		co2.introduceSSpay();
 		System.out.println("Pay: $" + co2.computePay(35) + "\n" + "-----------------------------------" + "\n");
 		
-		cu1.introduce();
+		cu1.introduceSS();
 		cu1.makePayment();
 		System.out.println("-----------------------------------" + "\n");
 		
-		cu2.introduce();
+		cu2.introduceSS();
 		cu2.makePayment();
 		System.out.println("-----------------------------------" + "\n");
 	}
