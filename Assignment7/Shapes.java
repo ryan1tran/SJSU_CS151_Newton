@@ -32,14 +32,11 @@ public class Shapes<T extends Shape2D>
 		shapeList.remove(shape);
 	}
 	
-	public synchronized void compute()
+	public synchronized void compute() throws InterruptedException
 	{
 		for (Shape2D shape : shapeList)
 			shape.start();
-		try
-		{
-			Thread.sleep(10);
-		} catch (InterruptedException e) {}
+		Thread.sleep(10);
 	}
 	
 	public Shape2D max()

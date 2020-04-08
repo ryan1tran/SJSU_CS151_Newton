@@ -15,6 +15,6 @@ public class Circle extends Shape2D
 	@Override
 	public String toString()
 	{
-		return "Cirle with diameter " + getHeight();
+		return "Circle with diameter " + getHeight();
 	}
 }
