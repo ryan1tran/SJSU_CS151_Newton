@@ -138,7 +138,8 @@ public class Calculator extends Application
         result.setText(num1 + " " + symbol + " " + num2 + " = " + answer);
     }
     
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         launch(args);
     }
 }
